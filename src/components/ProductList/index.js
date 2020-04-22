@@ -11,7 +11,7 @@ const ProductList = () => {
       portionsAmount: "10",
       details: ["мышь в подарок"],
       image:
-        "https://github.com/s-pyadyshev/funbox-html/blob/master/src/assets/img/cat.png",
+        "https://raw.githubusercontent.com/s-pyadyshev/funbox-html/master/src/assets/img/cat.png",
       weight: "0.5",
     },
     {
@@ -21,7 +21,7 @@ const ProductList = () => {
       portionsAmount: "40",
       details: ["2 мыши в подарок"],
       image:
-        "https://github.com/s-pyadyshev/funbox-html/blob/master/src/assets/img/cat.png",
+        "https://raw.githubusercontent.com/s-pyadyshev/funbox-html/master/src/assets/img/cat.png",
       weight: "2",
     },
     {
@@ -31,7 +31,7 @@ const ProductList = () => {
       portionsAmount: "100",
       details: ["5 мышей в подарок", "заказчик доволен"],
       image:
-        "https://github.com/s-pyadyshev/funbox-html/blob/master/src/assets/img/cat.png",
+        "https://raw.githubusercontent.com/s-pyadyshev/funbox-html/master/src/assets/img/cat.png",
       weight: "5",
       disabled: true,
     },
