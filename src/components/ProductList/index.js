@@ -12,7 +12,7 @@ const ProductList = () => {
       details: ["мышь в подарок"],
       image:
         "https://raw.githubusercontent.com/s-pyadyshev/funbox-html/master/src/assets/img/cat.png",
-      weight: "0.5",
+      weight: "0,5",
     },
     {
       title: "Сказочное заморское яство",
