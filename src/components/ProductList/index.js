@@ -13,6 +13,7 @@ const ProductList = () => {
       image:
         "https://raw.githubusercontent.com/s-pyadyshev/funbox-html/master/src/assets/img/cat.png",
       weight: "0,5",
+      quantity: 2,
     },
     {
       title: "Сказочное заморское яство",
@@ -23,6 +24,7 @@ const ProductList = () => {
       image:
         "https://raw.githubusercontent.com/s-pyadyshev/funbox-html/master/src/assets/img/cat.png",
       weight: "2",
+      quantity: 1,
     },
     {
       title: "Сказочное заморское яство",
@@ -33,7 +35,7 @@ const ProductList = () => {
       image:
         "https://raw.githubusercontent.com/s-pyadyshev/funbox-html/master/src/assets/img/cat.png",
       weight: "5",
-      disabled: true,
+      quantity: 0,
     },
   ];
   return (

@@ -17,7 +17,7 @@ const Product = (props) => {
     details,
     image,
     weight,
-    disabled,
+    quantity,
   } = props;
 
   const toggleHover = () => {
@@ -39,7 +39,7 @@ const Product = (props) => {
     product: true,
     "is-hovered": isHovered,
     "is-selected": isSelected,
-    "is-disabled": disabled,
+    "is-disabled": quantity === 0,
   });
 
   return (
@@ -82,24 +82,24 @@ const Product = (props) => {
         </div>
       </div>
       <div className="product__footer">
-        <span className="is-hidden-disabled is-hidden-selected">
-          Чего сидишь? Порадуй котэ,&nbsp;
-          <span
-            className="product__buy"
-            onMouseEnter={toggleHover}
-            onMouseLeave={toggleHover}
-            onClick={toggleClick}
-          >
-            купи
-          </span>
-          .
-        </span>
-        {isSelected ? (
-          <span className="is-shown-selected">
-            Головы щучьи с чесноком да свежайшая сёмгушка.
+        {!isSelected && quantity !== 0 ? (
+          <span>
+            Чего сидишь? Порадуй котэ,&nbsp;
+            <span
+              className="product__buy"
+              onMouseEnter={toggleHover}
+              onMouseLeave={toggleHover}
+              onClick={toggleClick}
+            >
+              купи
+            </span>
+            .
           </span>
         ) : null}
-        {disabled ? (
+        {isSelected ? (
+          <span>Головы щучьи с чесноком да свежайшая сёмгушка.</span>
+        ) : null}
+        {quantity === 0 ? (
           <span className="color-disabled-note">
             {`Печалька, ${addition} закончился.`}
           </span>

@@ -1,35 +1,5 @@
 @import "./variables.scss";
 
-.is-hovered {
-  .is-hidden-hover {
-    display: none;
-  }
-
-  .is-shown-hover {
-    display: block;
-  }
-}
-
-.is-disabled {
-  .is-hidden-disabled {
-    display: none;
-  }
-
-  .is-shown-disabled {
-    display: block;
-  }
-}
-
-.is-selected {
-  .is-hidden-selected {
-    display: none;
-  }
-
-  .is-shown-selected {
-    display: block;
-  }
-}
-
 .color-selected-hover {
   color: $state-color-selected-hovered;
 }
